@@ -37,5 +37,5 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
+app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'));
 module.exports = app;
